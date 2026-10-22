@@ -1,4 +1,4 @@
-# indi-canon-bulb-fix
+# INDI - Canon EOS
 
 Canon EOS 550D on a Raspberry Pi 5 (Ubuntu 24.04, arm64) with KStars/Ekos: every exposure longer than
 30 s started and never ended. This repository rebuilds the INDI gphoto driver with the upstream fix
@@ -11,7 +11,7 @@ shutter through libgphoto2's `eosremoterelease` setting, waits, and "releases" i
 driver (indi-gphoto 3.4, built 2025-10-03) picks those buttons by fixed index:
 
 | index | driver meant | libgphoto2 2.5.33 has |
-|------:|--------------|-----------------------|
+| -----:| ------------ | --------------------- |
 | 2     | Press Full   | Press Full AF         |
 | 4     | Release Full | **Press Full MF**     |
 | 7     | -            | Release               |
